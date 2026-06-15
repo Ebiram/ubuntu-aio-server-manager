@@ -62,7 +62,15 @@ case $MAIN_CHOICE in
             exit 1
         fi
         ;;
-    3|4)
+    3)
+        if [ -f "$MODULES_DIR/provision.sh" ]; then
+            source "$MODULES_DIR/provision.sh"
+        else
+            log_error "Provision module not found at: $MODULES_DIR/provision.sh"
+            exit 1
+        fi
+        ;;
+    4)
         log_warn "This architecture module is slated for the next development sprint."
         exit 0
         ;;
