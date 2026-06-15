@@ -66,7 +66,7 @@ show_deploy_menu() {
         echo " 2) Install OpenVPN Server (Angristan Secured Script)"
         echo " 0) Back to Main Menu"
         echo -e "${CYAN}======================================================================${NC}"
-        read -p "Select an application deployment routine [1-3]: " APP_CHOICE
+        read -p "Select an application deployment routine [0-2]: " APP_CHOICE
 
         case $APP_CHOICE in
             1) install_3x_ui ;;
