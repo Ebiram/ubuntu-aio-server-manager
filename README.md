@@ -2,17 +2,12 @@
 
 A modular, highly secure, and production-ready Bash automation suite tailored for **Ubuntu 24.04 LTS and higher**. This toolkit streamlines initial server provisioning, advanced kernel network optimizations, service deployment, and multi-server tunneling with a zero-trust approach.
 
-### ⚡ Quick One-Line Installation
+### ⚡ Fast One-Line Deployment
 
-Run the following command on your fresh Ubuntu server to download, extract, and execute the management suite automatically:
+Execute this unified block on any fresh Ubuntu terminal to fetch the suite and launch the manager dynamically:
 
 ```bash
-mkdir -p /tmp/server-tools && \
-curl -sL https://github.com/Ebiram/ubuntu-aio-server-manager/archive/refs/heads/main.tar.gz | \
-tar -xz -C /tmp/server-tools --strip-components=1 && \
-cd /tmp/server-tools && \
-chmod +x main.sh && \
-./main.sh
+rm -rf /tmp/server-tools && git clone https://github.com/Ebiram/ubuntu-aio-server-manager.git /tmp/server-tools && cd /tmp/server-tools && chmod +x main.sh && ./main.sh
 ```
 
 ## 🚀 Key Features & Architecture
